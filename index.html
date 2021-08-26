@@ -179,6 +179,10 @@
     </div>
     <div class="row justify-content-center">
       <div class="col-md-8">
+        <div class="alert alert-warning d-none alert-dismissible fade show show-alert" role="alert">
+         Message delivered, <strong>Thanks!</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
         <form name="mwicaksono-submit-form">
           <div class="mb-3">
             <label for="name" class="form-label">Name</label>
@@ -192,7 +196,11 @@
             <label for="message" class="form-label">Message</label>
             <textarea class="form-control" id="message" name="message" required rows="3"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary btn-send">Submit</button>
+          <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+            Loading...
+          </button>
         </form>
       </div>
     </div>
@@ -223,12 +231,27 @@
 
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbyrje57u0fGwBSf5zyDbLr5NUaXzov-jSNYZWxncxJlhz8YpFa16Onya_I9ZpHr1un_Og/exec'
-      const form = document.forms['mwicaksono-submit-form']
+      const form = document.forms['mwicaksono-submit-form'];
+      const btnSend = document.querySelector('.btn-send');
+      const btnLoading = document.querySelector('.btn-loading');
+      const showAlert = document.querySelector('.show-alert');
     
       form.addEventListener('submit', e => {
-        e.preventDefault()
+        e.preventDefault();
+        // when submit button clicked
+        // show loading button and remove submit button
+        btnLoading.classList.toggle('d-none');
+        btnSend.classList.toggle('d-none');
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => console.log('Success!', response))
+          .then(response => {
+            console.log('Success!', response);
+           // show submit button and remove loading button
+            btnLoading.classList.toggle('d-none');
+            btnSend.classList.toggle('d-none');
+            showAlert.classList.toggle('d-none');
+            form.reset();
+            setTimeout(function(){ showAlert; }, 4000);
+          })
           .catch(error => console.error('Error!', error.message))
       })
     </script>
