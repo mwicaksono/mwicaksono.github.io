@@ -3,207 +3,215 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-
-    <!-- My CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Boostrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 
-    <title>My Portfolio</title>
+    <!-- Righteous Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <!-- Open Sans Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- Lato Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+
+    <title>Masan's Portfolio</title>
   </head>
-  <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#home">Masan Abdi Wicaksono</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-          </ul>
+ 
+      <!-- Navbar -->
+      <section class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+        <div class="container">
+          <a class="navbar-brand fw-semibold brand-name" href="#">mwicaksono</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto nav-font">
+              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link active" href="#about">About</a>
+              <a class="nav-link active" href="#projects">Projects</a>
+              <a class="nav-link active" href="#contact">Contact</a>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <!-- End of Navbar -->
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="ps-5 pe-5 pt-5 pb-3 mb-8">
+                  <h2 class="fw-bold header-name display-1">Hi, I'm Masan.</h2>
+              </div>
+              <div class="ps-5 pe-5 mb-4">
+                  <h3 class="fw-normal header-info display-6">I am a <b>web developer</b> based in <b>Salatiga, ID</b>. I focus on the <b>back-end</b> of the web and i am interested in learning new things in web development. This website is where I share the projects I've been working on so far</h3>
+              </div>
+            </div>
+            <div class="col-md-4 text-center">
+              <div class="p-5 mb-4 rounded-3">
+                <img src="img/web.svg" class="img-fluid" width="400" alt="made by ultimatearm">
+              </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L60,90.7C120,117,240,171,360,176C480,181,600,139,720,149.3C840,160,960,224,1080,240C1200,256,1320,224,1380,208L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
       </div>
-    </nav>
+      <!-- End of Jumbotron -->
 
-
-    <div class="jumbotron" id="home">
-      <div class="container">
-        <div class="text-center">
-          <img src="img/profile1.png" class="rounded-circle img-thumbnail">
-          <h1 class="display-4">Masan Abdi Wicaksono</h1>
-          <h3 class="lead">Programmer Enthusiast</h3>
+      <!-- About -->
+      <section id="about">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col">
+              <h2 class="section-header display-5">About Me</h2>
+            </div>
+          </div>
+          <div class="row justify-content-center text-center fs-6 mt-5">
+            <div class="col-md-6 mb-3">
+              <img src="img/about.svg" class="img-fluid" width="600">
+            </div>
+            <div class="col-md-6 text-end">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officiis, quisquam cumque doloribus blanditiis facilis modi aliquam ipsum odio laborum ad perferendis animi quas deserunt ab, rem aliquid eveniet quo sunt nisi veritatis explicabo soluta error! Deleniti ipsam cum dolorum quidem ab dolor incidunt explicabo iste vel, sunt, officia excepturi facilis eum! Ullam neque consequuntur dolorem quidem facere sapiente mollitia ipsam reiciendis, harum sint nam quod esse libero labore ut adipisci eius pariatur nesciunt cupiditate id inventore velit sunt. Magnam qui tenetur veritatis nesciunt beatae aut cupiditate. Itaque dolorem molestias accusamus voluptatem rem. Non, inventore cum autem tempora eligendi laboriosam.</p>
+            </div>
+          </div>
         </div>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0096FF" fill-opacity="1" d="M0,160L60,149.3C120,139,240,117,360,101.3C480,85,600,75,720,90.7C840,107,960,149,1080,154.7C1200,160,1320,128,1380,112L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>   -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0096ff" fill-opacity="1" d="M0,288L120,277.3C240,267,480,245,720,202.7C960,160,1200,96,1320,64L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+      </section>
+      <!-- End of About -->
+
+      <!-- Projects -->
+<section id="projects">
+  <div class="container text-white">
+    <div class="row text-center mb-3">
+      <div class="col">
+        <h2 class="section-header display-5">Projects</h2>
       </div>
     </div>
-
-
-    <!-- About -->
-    <section class="about" id="about">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col text-center">
-            <h2>About</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, molestiae sunt doloribus error ullam expedita cumque blanditiis quas vero, qui, consectetur modi possimus. Consequuntur optio ad quae possimus, debitis earum.</p>
-          </div>
-          <div class="col-md-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, molestiae sunt doloribus error ullam expedita cumque blanditiis quas vero, qui, consectetur modi possimus. Consequuntur optio ad quae possimus, debitis earum.</p>
-          </div>
-        </div>
+    <div class="row">
+      <div class="col-md-6 mb-3 align-self-center">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officiis, quisquam cumque doloribus blanditiis facilis modi aliquam ipsum odio laborum ad perferendis animi quas deserunt ab, rem aliquid eveniet quo sunt nisi veritatis explicabo soluta error! Deleniti ipsam cum dolorum quidem ab dolor incidunt explicabo iste vel, sunt, officia excepturi facilis eum! Ullam neque consequuntur dolorem quidem facere sapiente mollitia ipsam reiciendis, harum sint nam quod esse libero labore ut adipisci eius pariatur nesciunt cupiditate id inventore velit sunt. Magnam qui tenetur veritatis nesciunt beatae aut cupiditate. Itaque dolorem molestias accusamus voluptatem rem. Non, inventore cum autem tempora eligendi laboriosam.</p>
       </div>
-    </section>
-
-
-    <!-- Portfolio -->
-    <section class="portfolio bg-light" id="portfolio">
-      <div class="container">
-        <div class="row pt-4 mb-4">
-          <div class="col text-center">
-            <h2>Portfolio</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md mb-4">
-            <div class="card">
-              <img class="card-img-top" src="img/thumbs/1.png" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md mb-4">
-            <div class="card">
-              <img class="card-img-top" src="img/thumbs/2.png" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md mb-4">
-            <div class="card">
-              <img class="card-img-top" src="img/thumbs/3.png" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>   
-        </div>
-
-        <div class="row">
-          <div class="col-md mb-4">
-            <div class="card">
-              <img class="card-img-top" src="img/thumbs/4.png" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div> 
-          <div class="col-md mb-4">
-            <div class="card">
-              <img class="card-img-top" src="img/thumbs/5.png" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md mb-4">
-            <div class="card">
-              <img class="card-img-top" src="img/thumbs/6.png" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+     
+      <div class="col-md-6 mb-5">
+        <img src="img/inventory.svg" class="img-fluid" width="600">
       </div>
-    </section>
 
+      <div class="col-md-6 mb-3 align-self-center">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officiis, quisquam cumque doloribus blanditiis facilis modi aliquam ipsum odio laborum ad perferendis animi quas deserunt ab, rem aliquid eveniet quo sunt nisi veritatis explicabo soluta error! Deleniti ipsam cum dolorum quidem ab dolor incidunt explicabo iste vel, sunt, officia excepturi facilis eum! Ullam neque consequuntur dolorem quidem facere sapiente mollitia ipsam reiciendis, harum sint nam quod esse libero labore ut adipisci eius pariatur nesciunt cupiditate id inventore velit sunt. Magnam qui tenetur veritatis nesciunt beatae aut cupiditate. Itaque dolorem molestias accusamus voluptatem rem. Non, inventore cum autem tempora eligendi laboriosam.</p>
+      </div>
+      <div class="col-md-6 mb-3">
+        <img src="img/letter.svg" class="img-fluid" width="600">
+      </div>
+    </div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L60,165.3C120,171,240,181,360,160C480,139,600,85,720,96C840,107,960,181,1080,192C1200,203,1320,149,1380,122.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+</section>
+      <!-- End of Projects -->
 
-    <!-- Contact -->
-    <section class="contact" id="contact">
-      <div class="container">
-        <div class="row pt-4 mb-4">
-          <div class="col text-center">
-            <h2>Contact</h2>
+      <!-- Skills -->
+      <section id="skills">
+        <div class="container-fluid">
+          <div class="row text-center mb-3 justify-content-center">
+            <div class="col">
+              <h2 class="section-header display-5">Things I do</h2>
+            </div>
           </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-4">
-            <div class="card bg-primary text-white mb-4 text-center">
-              <div class="card-body">
-                <h5 class="card-title">Contact Me</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="row justify-content-center">
+            <div class="col-md-3 mb-3">
+              <div class="card border-0">
+                <img src="img/coding.svg" width="200" class="img-thumbnail border-0 align-self-center mb-3" alt="backend">
+                <div class="card-body text-center">
+                  <h5 class="card-title">BackEnd</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, necessitatibus. Assumenda, sapiente ullam? Ab perspiciatis esse illum rerum autem nobis!</p>
+                </div>
               </div>
             </div>
-            
-            <ul class="list-group mb-4">
-              <li class="list-group-item"><h3>Location</h3></li>
-              <li class="list-group-item">My Office</li>
-              <li class="list-group-item">Jl. Tritis Sari No.9, Klumpit, Salatiga, Indonesiya</li>
-              <li class="list-group-item">Central Java, Indonesia</li>
-            </ul>
-          </div>
-
-          <div class="col-lg-6">
-            
-            <form>
-              <div class="form-group">
-                <label for="nama">Nama</label>
-                <input type="text" class="form-control" id="nama">
+            <div class="col-md-3 mb-3">
+              <div class="card border-0">
+                <div class="card-body text-center">
+                  <img src="img/database.svg" width="200" class="img-thumbnail border-0 align-self-center mb-3" alt="database">
+                  <h5 class="card-title">Database</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cumque qui obcaecati iste totam nesciunt iure voluptatum labore earum hic.</p>
+                </div>
               </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="text" class="form-control" id="email">
+            </div>
+            <div class="col-md-3 mb-3">
+              <div class="card border-0">
+                <div class="card-body text-center">
+                  <img src="img/frontend.svg" width="200" class="img-thumbnail border-0 align-self-center mb-3" alt="database">
+                  <h5 class="card-title">FrontEnd</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cumque qui obcaecati iste totam nesciunt iure voluptatum labore earum hic.</p>
+                </div>
               </div>
-              <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="text" class="form-control" id="phone">
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
-              </div>
-              <div class="form-group">
-                <button type="button" class="btn btn-primary">Send Message</button>
-              </div>
-            </form>
-
+            </div>
           </div>
         </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0096ff" fill-opacity="1" d="M0,32L60,58.7C120,85,240,139,360,181.3C480,224,600,256,720,234.7C840,213,960,139,1080,117.3C1200,96,1320,128,1380,144L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0096ff" fill-opacity="1" d="M0,128L120,128C240,128,480,128,720,154.7C960,181,1200,235,1320,261.3L1440,288L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
+      </section>
+      <!-- End of Skills -->
+
+      <!-- Contact -->
+<section id="contact">
+  
+  <div class="container">
+    <div class="row text-center mb-3">
+      <div class="col">
+        <h2 class="section-header display-5">Send me a message!</h2>
       </div>
-    </section>
-
-
-    <!-- footer -->
-    <footer class="bg-dark text-white mt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">
-            <p>Copyright &copy; 2018.</p>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" aria-describedby="name">
           </div>
-        </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="email">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
-    </footer>
+    </div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0D6EFD" fill-opacity="1" d="M0,256L120,261.3C240,267,480,277,720,261.3C960,245,1200,203,1320,181.3L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+</section>
+      <!-- End of Contact -->
+
+    <!-- Footer -->
+   
+<footer class="bg-primary text-white text-center pb-3">
+  <p>Follow Me</p>
+  <p>
+    <a class="text-white" target="_blank" href="https://www.facebook.com/masanwicaksono"><i class="bi bi-facebook fs-2 me-2"></i></a>
+    <a class="text-white" target="_blank" href="https://github.com/mwicaksono"><i class="bi bi-github fs-2 ms-2 me-2"></i></a>
+    <a class="text-white" target="_blank" href="https://www.instagram.com/masanwicaksono/"><i class="bi bi-instagram ms-2 fs-2 ms-2 me-2"></i></a>
+    <a class="text-white" target="_blank" href="https://twitter.com/mwcksn"><i class="bi bi-twitter fs-2 ms-2 me-2"></i></a>
+    <a class="text-white" target="_blank" href="https://t.me/WenakMas"><i class="bi bi-telegram fs-2 ms-2 me-2"></i></a>
+  </p>
+  <p>&copy; 2021 <b class="text-decoration-underline">Masan Abdi Wicaksono</b></p>
+</footer>
+    <!-- End of Footer -->
 
 
 
@@ -211,10 +219,17 @@
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  
   </body>
 </html>
