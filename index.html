@@ -179,18 +179,18 @@
     </div>
     <div class="row justify-content-center">
       <div class="col-md-8">
-        <form>
+        <form name="mwicaksono-submit-form">
           <div class="mb-3">
             <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" aria-describedby="name">
+            <input type="text" class="form-control" id="name" aria-describedby="name" name="name" required>
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Email Address</label>
-            <input type="email" class="form-control" id="email" aria-describedby="email">
+            <input type="email" class="form-control" id="email" aria-describedby="email" name="email" required>
           </div>
           <div class="mb-3">
             <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" rows="3"></textarea>
+            <textarea class="form-control" id="message" name="message" required rows="3"></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
@@ -199,6 +199,8 @@
   </div>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0D6EFD" fill-opacity="1" d="M0,256L120,261.3C240,267,480,277,720,261.3C960,245,1200,203,1320,181.3L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
 </section>
+
+
       <!-- End of Contact -->
 
     <!-- Footer -->
@@ -219,20 +221,20 @@
 
 
 
-
-
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyrje57u0fGwBSf5zyDbLr5NUaXzov-jSNYZWxncxJlhz8YpFa16Onya_I9ZpHr1un_Og/exec'
+      const form = document.forms['mwicaksono-submit-form']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-    -->
-  
+    
   </body>
 </html>
