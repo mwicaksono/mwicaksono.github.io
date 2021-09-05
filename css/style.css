@@ -8,7 +8,7 @@ body {
 
 .jumbotron {
   padding-top: 2rem;
-  background-color: #0096ff;
+  background-color: #002233;
 }
 
 .header-name {
@@ -20,12 +20,23 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+#about {
+  background-color: #0066ff;
+}
 #projects {
-  background-color: #0096ff;
+  background-color: #002233;
+}
+
+#skills {
+  background-color: #0066ff;
+}
+
+#gallery {
+  background-color: #002233;
 }
 
 #contact {
-  background-color: #0096ff;
+  background-color: #0066ff;
 }
 
 section {
@@ -45,7 +56,7 @@ section {
 }
 
 .card-background {
-  background-color: #0096ff;
+  background-color: #0066ff;
 }
 
 .check-border {
@@ -80,4 +91,8 @@ section {
 
 .project-image:hover {
   transform: scale(1.15);
+}
+
+.cards-color {
+  background-color: #0066ff;
 }
