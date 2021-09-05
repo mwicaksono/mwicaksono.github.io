@@ -95,7 +95,11 @@ section {
 }
 
 .project-image:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
+}
+
+.nav-link:hover {
+  color: #0088ff !important;
 }
 
 .cards-color {
