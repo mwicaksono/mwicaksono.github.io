@@ -1,0 +1,125 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.jumbotron {
+  padding-top: 2rem;
+  background-color: #002233;
+}
+
+.text-caption {
+  color: #c3cdfe !important;
+}
+
+.about-text {
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.navigation-bar {
+  background-color: #002233;
+}
+
+.header-name {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif !important;
+}
+.header-info {
+  color: #ffffff;
+  font-family: "Karla", sans-serif;
+}
+
+#about {
+  background-color: #0850bd;
+}
+#projects {
+  background-color: #002233;
+}
+
+#skills {
+  background-color: #0850bd;
+}
+
+#gallery {
+  background-color: #002233;
+}
+
+#contact {
+  background-color: #0850bd;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.brand-name {
+  font-family: "Righteous", cursive;
+}
+
+.section-header,
+.card-title,
+.nav-font,
+.projects-header {
+  font-family: "Montserrat", sans-serif;
+}
+
+.content-words,
+.contact-text,
+.footer-text {
+  font-family: "Karla", sans-serif;
+}
+
+.card-background {
+  background-color: #0850bd;
+}
+
+.check-border {
+  border: 5px solid black;
+}
+
+@media (max-width: 576px) {
+  .header-name,
+  .header-button,
+  .content-text-sm {
+    text-align: center !important;
+  }
+
+  .header-content-text-sm {
+    text-align: center !important;
+    font-size: 1.7rem;
+  }
+
+  .header-image {
+    display: none;
+  }
+}
+
+.gallery {
+  width: 100%;
+}
+
+#gallery .row > * {
+  padding: 0;
+}
+
+.project-image {
+  transition: transform 0.2s;
+}
+
+.project-image:hover {
+  transform: scale(1.1);
+}
+
+.nav-link:hover {
+  color: #0088ff !important;
+}
+
+.cards-color {
+  background-color: #0850bd;
+  border: none;
+}
