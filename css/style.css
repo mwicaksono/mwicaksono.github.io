@@ -136,6 +136,10 @@ section {
   .second-child {
     order: 1;
   }
+
+  .project-image {
+    width: 100%;
+  }
 }
 
 .gallery {
