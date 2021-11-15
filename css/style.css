@@ -57,6 +57,11 @@ section {
   padding-top: 5rem;
 }
 
+.flex-projects {
+  display: flex;
+  flex-direction: row;
+}
+
 .brand-name {
   font-family: "Righteous", cursive;
 }
@@ -96,6 +101,19 @@ section {
 
   .header-image {
     display: none;
+  }
+
+  .flex-projects {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .first-child {
+    order: 2;
+  }
+
+  .second-child {
+    order: 1;
   }
 }
 
