@@ -6,6 +6,27 @@ body {
   overflow-x: hidden;
 }
 
+/* Custom ScrollBar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #002233;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0850bd;
+}
+
 .jumbotron {
   padding-top: 2rem;
   background-color: #002233;
